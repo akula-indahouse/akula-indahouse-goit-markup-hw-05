@@ -163,6 +163,33 @@
 	opacity: 1;
 	background-color: #2196F3;
  }
+
+ .current-studio::after {
+	position: absolute;
+	content: "";
+	opacity: 1;
+		
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    border-radius: 2px;
+
+    background-color: #2196F3;}
+
+ .current-portfolio::after {
+	position: absolute;
+	content: "";
+	opacity: 1;
+		
+	width: 100%;
+	height: 4px;
+	bottom: -1px;
+	left: 0;
+	border-radius: 2px;
+
+	background-color: #2196F3;}
+
  
  
  /*------------HERO------------*/
