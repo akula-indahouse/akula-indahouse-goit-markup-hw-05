@@ -814,16 +814,16 @@ color: #212121;
     box-sizing: border-box;
     border-radius: 4px;	
 	margin-bottom: 10px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .input-icon{
-	
+	display: block;
 	 position: absolute;
 	 top: 50%;
 	transform: translateY(-50%);
 	cursor: pointer;
-	padding-left: 15px;
-
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
     .label-item {
@@ -833,8 +833,18 @@ color: #212121;
 	letter-spacing: 0.01em;
 	color: #757575;
 	padding-bottom: 4px;
-	
  }
+
+ .input-item:hover,
+ .input-item:focus {
+	border-color: #2196f3;
+ }
+
+ .input-item:hover + .input-icon,
+ .input-item:focus + .input-icon {
+	 fill: #2196f3 ;
+ }
+
 
  .textarea-item::placeholder {
 	font-family: inherit;
@@ -861,8 +871,15 @@ color: #212121;
 	box-sizing: border-box;
 	border-radius: 4px;
 	resize: none;
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: pointer;
 }
+
+.textarea-item:focus,
+.textarea-item:hover {
+	border-color: #2196f3;
+}
+
 
 /* CHEKBOX */
 
